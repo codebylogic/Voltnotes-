@@ -1200,6 +1200,13 @@ fun FloatingPillFormattingToolbar(
                     testTag = "tool_5_toggle"
                 )
 
+                Box(
+                    modifier = Modifier
+                        .width(0.8.dp)
+                        .height(20.dp)
+                        .background(palette.hairlineBorder)
+                )
+
                 // 6. Colour (A)
                 ToolbarIconChip(
                     icon = Icons.Outlined.FormatColorText,
@@ -1245,6 +1252,13 @@ fun FloatingPillFormattingToolbar(
                     accentDotColor = RichTextSpanEngine.parseCssColor(activeFormatting.highlightColorHex),
                     onClick = onToolHighlighterClick,
                     testTag = "tool_10_highlighter"
+                )
+
+                Box(
+                    modifier = Modifier
+                        .width(0.8.dp)
+                        .height(20.dp)
+                        .background(palette.hairlineBorder)
                 )
 
                 // 11. Font Size (16px ▾)

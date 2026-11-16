@@ -185,6 +185,7 @@ fun HomeScreen(
             } else {
                 EditorialCollapsingHeader(
                     title = currentFolderTitle,
+                    itemCount = items.size,
                     isInSubfolder = isInSubfolder,
                     isCollapsed = isCollapsed,
                     isSearchActive = isSearchActive,
@@ -420,6 +421,7 @@ fun HomeScreen(
 @Composable
 private fun EditorialCollapsingHeader(
     title: String,
+    itemCount: Int,
     isInSubfolder: Boolean,
     isCollapsed: Boolean,
     isSearchActive: Boolean,
@@ -437,7 +439,7 @@ private fun EditorialCollapsingHeader(
         modifier = Modifier
             .fillMaxWidth()
             .padding(horizontal = 16.dp)
-            .padding(top = 8.dp, bottom = 4.dp)
+            .padding(top = 10.dp, bottom = 4.dp)
     ) {
         Row(
             modifier = Modifier
@@ -483,6 +485,24 @@ private fun EditorialCollapsingHeader(
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis
                 )
+
+                Spacer(modifier = Modifier.width(8.dp))
+
+                Surface(
+                    shape = RoundedCornerShape(8.dp),
+                    color = palette.softTintedSurface,
+                    border = BorderStroke(0.8.dp, palette.hairlineBorder)
+                ) {
+                    Text(
+                        text = itemCount.toString(),
+                        style = MaterialTheme.typography.labelMedium.copy(
+                            color = palette.textSecondary,
+                            fontWeight = FontWeight.SemiBold,
+                            fontSize = 11.sp
+                        ),
+                        modifier = Modifier.padding(horizontal = 7.dp, vertical = 2.dp)
+                    )
+                }
             }
 
             // Right Action Buttons: Search (🔍), Custom Drag-Sort (⇅), Vault Switcher (📁)
