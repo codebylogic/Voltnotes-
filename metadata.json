@@ -1,0 +1,6 @@
+{
+  "name": "VaultNotes",
+  "description": "Offline native Android rich-text notes and file manager with lossless HTML storage, LaTeX math, tables, toggles, and image cropping.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

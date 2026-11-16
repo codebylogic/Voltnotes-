@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Custom VaultNotes Notebook + Keyhole Emblem inside 66dp safe zone -->
+    <path
+        android:fillColor="#FBFBF9"
+        android:pathData="M34,26C31.79,26 30,27.79 30,30V78C30,80.21 31.79,82 34,82H74C76.21,82 78,80.21 78,78V38L66,26H34ZM64,29.5L74.5,40H64V29.5ZM38,46H58V50H38V46ZM38,56H70V60H38V56ZM38,66H62V70H38V66Z" />
+    <path
+        android:fillColor="#818CF8"
+        android:pathData="M26,34H30V42H26V34ZM26,50H30V58H26V50ZM26,66H30V74H26V66Z" />
+</vector>
